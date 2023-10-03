@@ -1,0 +1,266 @@
+@font-face {
+	font-family: 'Poppins light'; 
+	src: url(font/Poppins/poppins/Poppins-Light.ttf); 
+}
+ 
+@font-face {
+	font-family: 'Poppins bold'; 
+	src: url(font/Poppins/poppins/Poppins-Bold.ttf); 
+}
+
+@font-face {
+	font-family: 'Poppins medium'; 
+	src: url(font/Poppins/poppins/Poppins-Medium.ttf); 
+}
+
+body {
+    background-color: #fdfaf6;
+    font-family:'Poppins light';
+    font-size: 1.5vw;
+    line-height: 1.6em;
+}
+
+#grid {
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav nav"
+    " . . . . "
+    "aticle-1 article-1 image-1 image-1"
+    "image-2 image-2 article-2 article-2"
+    "header header header header"
+    "image-diafilm-1 text-1 text-2 image-diafilm-4"
+    " . image-diafilm-2 image-diafilm-3 ."
+    "article-3 article-3 form form";
+    grid-template-rows: 0.1fr 0.3fr 1.8fr 1.8fr 0.7fr 0.7fr 1.5fr 1fr;
+    grid-template-columns: 0.3fr 2fr 2fr 0.3fr;
+    grid-column-gap: 0.5vw;
+}
+
+/* наведение на ссылку */
+.navbar-light .navbar-nav .nav-link:hover {
+    font-weight: bold;
+    color: #58a9a5;
+    border: none;
+    border-bottom: 0.5vh solid #fed565;
+}
+
+h1.navbar-brand {
+    padding-left: 4.5%;
+    font-size: 4vh;
+    font-family: 'Poppins bold';
+}
+
+img {
+    height: 5vh;
+    width: auto;
+}
+
+li a {
+    margin: 0vh 2vw;
+}
+
+button.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+span {
+    font-size: 2vw;
+}
+
+h1, h2 {
+    font-family: 'Poppins bold';
+    line-height: 1.3em;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+h2 {
+    font-size: 2.5vw;
+}
+
+#article-1, #article-2, #article-3 {
+    padding-left: 5%;
+}
+
+
+#image-1 img {
+    height: auto;
+    width: 46vw;
+    border-radius: 7%;
+    filter: contrast(66%);
+    margin-top: 2%;
+}
+
+#image-2 img {
+    height: auto;
+    width: 46vw;
+    border-radius: 7%;
+    filter: contrast(80%);
+    margin-left: 10%;
+}
+
+
+#article-2 {
+    margin-top: 1.5vh;
+    margin-left: 5%;
+}
+
+button {
+    font-family: 'Poppins medium';
+    color: white;
+    background-color: #58a9a5;
+    height: 3.2em;
+    width: 6em;
+    border-radius: 7%;
+    border: none;
+    font-size: 2.5vh;
+}
+
+.double-hr {
+	height: 2.5vh;
+    max-height: 10px;
+    width: 6.5em;
+    border: none;
+    border-top: 0.22em solid #58a9a5;
+	border-bottom: 0.22em solid #58a9a5;
+    color:white;
+}
+
+#header, .text-diafilm {
+    text-align: center;
+}
+
+.imageButton {
+    height: auto;
+    width: 3vw;
+    margin: 1vh 30%;
+} 
+
+
+#imageLeft, #imageRight {
+    height: auto;
+    width: 30vw;
+    filter: contrast(80%);
+    border-radius: 7%;
+    margin: -12vh 15%;
+}
+
+form fieldset {
+    width: 60vw;
+    height: 40vh;
+    margin-bottom: 5vh;
+    margin-left: -15vw;
+}
+
+form input[type=text], form input[type=email],  form textarea {
+    width: 50vw;
+    height: 2em;
+    margin: 0.5em 4.5vw;
+    border: none;
+    border-bottom: 0.1vh solid black;
+    font-family:'Poppins medium';
+    font-size: 1.5vw;
+}
+
+form button {
+    margin-left: 75%;
+}
+
+::placeholder {
+    color: red;
+    font-family: 'Poppins light';
+    font-size: 1.5vw;
+}
+
+#req {
+    font-size: 0.7em;
+    margin: 1vh 4.5vw;
+}
+
+
+ @media all and (max-width: 992px) and (min-width:501px) { /* < 768px - бургер меню */
+    #grid {
+        display: grid;
+        grid-template-rows: 0.1fr 0.3fr 1fr 1fr 0.4fr 0.5fr 1fr 0.5fr;
+        grid-template-columns: 0.3fr 2fr 2fr 0.3fr;
+    }
+    button {
+        font-family: 'Poppins medium';
+        font-size: x-small;
+        max-height: 5em;
+    }
+
+ }
+
+ @media all and (max-width: 500px) {
+    body {
+        font-size: 3vw;
+        height: 80%;
+    }
+    #grid {
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    " . . . "
+    "article-1 article-1 article-1"
+    "image-1 image-1 image-1"
+    "article-2 article-2 article-2"
+    "image-2 image-2 image-2"
+    "header header header"
+    "image-diafilm-1 text-1 image-diafilm-4"
+    " image-diafilm-2 image-diafilm-2 image-diafilm-2"
+    "article-3 article-3 article-3"
+    "form form form";
+    grid-template-rows: 0.1fr 0.3fr 1.1fr 1fr 1fr 1fr 0.4fr 0.4fr 1.5fr 0.4fr 1fr;
+    grid-template-columns: 0.3fr 2fr 0.3fr;
+    grid-row-gap: 0;
+    }
+
+    button {
+        font-family: 'Poppins medium';
+        font-size: x-small;
+        max-height: 5em;
+    }
+    #imageRight, #text-result-2, #header-result-2 {
+        display: none;
+    }
+    #image-1 img, #image-2 img, #imageLeft {
+        margin: 0vh 15%;
+        padding: 0;
+        width: 70vw;
+    }
+    h1 {
+        font-size: 4.5vw;
+    }
+    
+    h2 {
+        font-size: 4vw;
+    }
+    .double-hr {
+        display: none;
+    }
+
+    #article-1, #article-2, #article-3 {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    form fieldset {
+        margin: 0 20%;
+    }
+
+    ::placeholder  {
+        font-size: 1em;
+    }
+    
+    form textarea {
+        font-size: 0.6em;
+    }
+
+ }

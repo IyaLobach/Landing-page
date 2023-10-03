@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+          Итоговое задание 2 модуля
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <!-- Ссылка на макет https://www.figma.com/file/r4gvhPjDYJG4YMFtltt1MH/Locus?node-id=0%3A1&t=aNmVeL27Taryy0Eb-0-->
+    </head>
+    <body>
+      <div id="grid">
+          <nav class="navbar sticky-top navbar-expand-md navbar-light" style="background-color: #fdfaf6; grid-area: nav;">
+              <div class="container-fluid">
+                <h1 class="navbar-brand" href="#"> <img src="image/locus.png" alt="Locus"> Locus </h1>
+                
+                  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span> Menu </span>
+                 </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#header"> Our Project</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#article-3"> Contact </a>
+                    </li>
+                  </ul>
+
+                  <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+                    <li>
+                      <button> Sign Up </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </nav>
+
+            <div id="article-1" style="grid-area: article-1;">
+                <h1> Get the inspiration
+                    <br> of interior design 
+                    <br>here
+                </h1>
+                    architecture not only about engineering, it even 
+                    <br>lands to art and aesthetics. With us, you will get 
+                    <br>a residentical design with an extraordinary touch 
+                    <br>of art.
+                <br><br> <button> Let’s go </button>
+            </div>
+
+           <div id="image-1" style="grid-area: image-1;">
+                <img src="image/image1.jpg" alt="Вариант дизайна">
+           </div>
+
+           <div id="image-2" style="grid-area: image-2;">
+                <img src="image/image2.jpg" alt="Вариант дизайна">
+           </div>
+
+           <div id="article-2" style="grid-area: article-2;">
+                <h2> Our mission is to 
+                    <br>deliver aesthetic visual
+                    <br>for your home
+                </h2>
+                    By applying bacis psychology principles, 
+                    <br> we are going to explain how perception 
+                    <br> works and how we can use this understanding 
+                    <br> to maximise the space that we occupy in 
+                    <br>our homes.
+            </div>
+
+
+            <div id="header" style="grid-area: header;">
+                <h1>Our project</h1>
+                Introducing our first official project
+                <div class="double-hr" style="margin: 2vh 45%;"></div>
+            </div>
+
+            <img class="imageButton" onClick="leftButton()" src="image/left.png" alt="Left" style="grid-area: image-diafilm-1;">
+
+            <div class="text-diafilm" style="grid-area: text-1;">
+                <h2 id="header-result-1"> Project Livingroom </h2>
+                <div id="text-result-1"> 
+                    Bright and spacious livingroom with bright accents
+                 </div>
+            </div>
+
+            <div class="text-diafilm" style="grid-area: text-2;">
+                <h2 id="header-result-2"> Project workspace </h2>
+                <div id="text-result-2"> 
+                    Functional and comfortable workspace
+                </div>
+            </div>
+          
+            <img class="imageButton" onClick="rightButton()" src="image/right.png" alt="Right" style="grid-area: image-diafilm-4;">
+
+            <div style="grid-area: image-diafilm-2;">
+                <img id="imageLeft" src="image/image_0.jpg" alt="Картинка">              
+            </div>
+
+            <div style="grid-area: image-diafilm-3;">
+                <img id="imageRight" src="image/image_1.jpg"  alt="Картинка">              
+            </div>
+
+            <div id="article-3" style="grid-area: article-3;">
+                <h1>Contact Us</h1>
+                Have any questions? Want help
+                <br>before getting started?
+                <div class="double-hr" style="margin: 2vh 0.2vw;"></div>
+            </div>
+
+            <form style="grid-area: form;">
+                <fieldset>
+                    <div id="req"><em>*</em> fields marked in red are required</div>
+                    <input type="text" id="userName" placeholder= "Full name" required>
+                    <br><input type="email" id="userEmail" placeholder="Email address" required>
+                    <br><textarea id="userDescription"> Description </textarea>
+                    <button onClick="return sendReview();"> Send now </button>
+                </fieldset>
+            </form>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+</html>
