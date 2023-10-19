@@ -1,6 +1,6 @@
 # Landing page #
 
-## Был использован готовый дизайн страницы ##
+#### Был использован готовый дизайн страницы ####
 
 Источник: https://www.figma.com/file/r4gvhPjDYJG4YMFtltt1MH/Locus?node-id=0%3A1&t=aNmVeL27Taryy0Eb-0
 
