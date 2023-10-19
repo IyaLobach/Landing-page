@@ -39,4 +39,4 @@
 
 ## Внешний вид ##
 
-![index.html](https://github.com/IyaLobach/Landing-page/blob/main/Landing Page/image/view.jpeg)
+![index.html](https://github.com/IyaLobach/Landing-page/blob/master/Landing%20Page/image/view.jpeg)
